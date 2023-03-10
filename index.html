@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>modal-practice</title>
 </head>
 <body>
-    <h1>Hey, I'm Marcin!</h1>
-    <p>If you want to know me, please contact me</p>
-    <button>Contact</button>
+    <h1>Hey, I'm Marcin, frontend developer!</h1>
+    <p>If you want more info about me, send a message.</p>
+    <button id="contact-btn">Contact</button>
     <div class="modal">
-        <form>
-            <label for="name">Imię:</label><input type="text" id="name">
-            <label for="surname">Nazwisko</label><input type="text" id="surname">
-            <label for="msg">Wiadomość:</label><textarea name="" id="msg" cols="30" rows="10"></textarea>
-            <button type="submit" id="submit-btn"></button>
+        <form class="modal-form">
+            <button class="close-btn">&times;</button>
+            <label for="name">Name:</label><input  class="margin" type="text" id="name">
+            <label for="surname">Surname:</label><input class="margin" type="text" id="surname">
+            <label for="msg">Message:</label><textarea class="margin" id="msg" cols="21" rows="5"></textarea>
+            <button id="submit-btn">Submit</button>
         </form>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
